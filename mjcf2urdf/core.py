@@ -18,8 +18,6 @@ def convert_mjcf_to_urdf(input_mjcf, output_path):
         output directory path of urdf.
     """
     client = bulllet_client.BulletClient()
-    # objs = client.loadMJCF(
-    #     input_mjcf, flags=client.URDF_USE_IMPLICIT_CYLINDER)
     objs = client.loadMJCF(input_mjcf)
 
     # create output directory
